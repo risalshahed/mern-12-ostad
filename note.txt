@@ -1,0 +1,15 @@
+JavaScript is a,
+Single Threaded, Synchronous Language
+
+
+var a = 2;
+
+function something() {
+  return a * 2;
+}
+
+
+SDLC (Software Development Life Cycle)
+Backend
+API
+Frontend
