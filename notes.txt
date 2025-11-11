@@ -1,0 +1,9 @@
+npm i express multer dotenv
+
+npm i -D nodemon
+
+Multer npm package
+https://www.npmjs.com/package/multer
+
+
+JavaScript is a Synchronous Single Threaded Language
