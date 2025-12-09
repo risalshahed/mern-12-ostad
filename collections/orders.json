@@ -1,0 +1,23 @@
+[
+  {
+    "orderId": "ORD-1001",
+    "userId": { "$oid": "67110a001" },
+    "product": "iPhone 14 Pro",
+    "amount": 1400,
+    "createdAt": { "$date": "2024-10-01T10:00:00Z" }
+  },
+  {
+    "orderId": "ORD-1002",
+    "userId": { "$oid": "67110a002" },
+    "product": "Samsung S23",
+    "amount": 1200,
+    "createdAt": { "$date": "2024-10-02T14:00:00Z" }
+  },
+  {
+    "orderId": "ORD-1003",
+    "userId": { "$oid": "67110a003" },
+    "product": "Sony WH-1000XM5",
+    "amount": 350,
+    "createdAt": { "$date": "2024-10-05T09:00:00Z" }
+  }
+]

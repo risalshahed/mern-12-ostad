@@ -1,0 +1,78 @@
+Mongodb Download Guide for Windows
+https://drive.google.com/file/d/1Ib8sb9pysB895vrtc4UWPe9k3dM-O4sS/view?usp=sharing
+
+
+Limit
+
+db.products.find().limit(3)
+
+Sort (Ascending)
+db.products.aggregate([
+  { $sort: { price: 1 } }
+]);
+
+Sort (Descending)
+db.products.aggregate([
+  { $sort: { price: -1 } }
+]);
+
+Match Condition
+// display documents of 'Mobile' category
+db.products.aggregate([
+  { $match: { category: "Mobile" } }
+]);
+
+Projection
+// Show only product's title & price
+db.products.find(
+  {},                     // first part → condition empty = all data
+  { title: 1, price: 1 }  // projection → শুধু এগুলো দেখাও
+);
+
+Skip & Limit
+db.products.find().skip(10).limit(5)
+
+Group By category
+db.products.aggregate([
+  { $group: { _id: "$category" } }
+]);
+
+Group By category & SUM of each category
+db.products.aggregate([
+  { $group: { _id: "$category", totalPrice: { $sum: "$price" } } }
+])
+
+Max/ Min
+db.products.aggregate([
+  { 
+    $group: { 
+      _id: "$category",
+      maxPrice: { $max: "$price" },
+      minPrice: { $min: "$price" }
+    } 
+  }
+])
+
+Sum of All products
+db.products.aggregate([
+  { $group: { _id: null, total: { $sum: "$price" } } }
+]);
+
+Group by Multiple Fields
+db.products.aggregate([
+  { 
+    $group: { 
+      _id: { category: "$category", brand: "$brand" },
+      total: { $sum: "$price" }
+    } 
+  }
+])
+
+Add New Field
+db.products.aggregate([
+  {
+    $addFields: {
+      discountedPrice: { $subtract: ["$price", 100] }
+    }
+  }
+])

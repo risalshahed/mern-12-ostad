@@ -1,0 +1,38 @@
+[
+  {
+    "title": "iPhone 14 Pro",
+    "category": "Mobile",
+    "brand": "Apple",
+    "price": 1400
+  },
+  {
+    "title": "Samsung S23",
+    "category": "Mobile",
+    "brand": "Samsung",
+    "price": 1200
+  },
+  {
+    "title": "MacBook Air M2",
+    "category": "Laptop",
+    "brand": "Apple",
+    "price": 2200
+  },
+  {
+    "title": "Dell XPS 13",
+    "category": "Laptop",
+    "brand": "Dell",
+    "price": 1800
+  },
+  {
+    "title": "Sony WH-1000XM5",
+    "category": "Headphone",
+    "brand": "Sony",
+    "price": 350
+  },
+  {
+    "title": "Boat BassHeads 225",
+    "category": "Headphone",
+    "brand": "Boat",
+    "price": 20
+  }
+]
