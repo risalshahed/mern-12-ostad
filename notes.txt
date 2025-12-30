@@ -1,0 +1,35 @@
+npm init -y
+npm i express mongoose dotenv cors bcryptjs jsonwebtoken axios uuid
+npm i -D nodemon
+
+
+Project Structure
+│
+├── server.js
+├── app.js
+│
+├── config/
+│   ├── db.js
+│
+├── controllers/
+│   ├── authController.js
+│   ├── paymentController.js
+│
+├── models/
+│   ├── User.js
+│   ├── Order.js
+│   ├── Payment.js
+│
+├── routes/
+│   ├── authRoutes.js
+│   ├── paymentRoutes.js
+│
+├── utils/
+│   ├── sslcommerz.js
+│
+├── middlewares/
+│   ├── authMiddleware.js
+│   ├── errorMiddleware.js
+│
+├── .env
+├── package.json
